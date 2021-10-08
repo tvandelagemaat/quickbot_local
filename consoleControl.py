@@ -37,15 +37,15 @@ BACKWARD = -1
 SEND_FLAG = True
 
 # Get input arguments
-LOCAL_IP = "192.168.1.168" # Computer IP address (change to correct value)
+LOCAL_IP = "192.168.2.1" # Computer IP address (change to correct value)
 QB_IP = "192.168.1.160" # QuickBot IP address (change to correct value)
 PORT = 5005
 if len(sys.argv) > 2:
-    print 'Invalid number of command line arguments.'
-    print 'Usage:'
-    print '>> consoleControl.py <robot-ip>'
-    print 'Example:'
-    print '>> consoleControl.py ', QB_IP
+    print('Invalid number of command line arguments.')
+    print('Usage:')
+    print('>> consoleControl.py <robot-ip>')
+    print('Example:')
+    print('>> consoleControl.py ', QB_IP)
     sys.exit()
 
 if len(sys.argv) == 2:
@@ -134,7 +134,7 @@ class QuickBot:
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.setblocking(False)
-print 'Binding to %s %d' % (LOCAL_IP, PORT);
+print('Binding to %s %d' % (LOCAL_IP, PORT));
 sock.bind((LOCAL_IP, PORT))
 QB = QuickBot(sock)
 

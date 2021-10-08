@@ -31,11 +31,11 @@ axisMinVal = 0.2
 HOST = "192.168.1.101"
 PORT = 5005
 if len(sys.argv) > 2:
-    print 'Invalid number of command line arguments.'
-    print 'Proper syntax:'
-    print '>> joystickControl.py robotIP'
-    print 'Example:'
-    print '>> QuickBotRun.py ', HOST
+    print('Invalid number of command line arguments.')
+    print('Proper syntax:')
+    print('>> joystickControl.py robotIP')
+    print('Example:')
+    print('>> QuickBotRun.py ', HOST)
     sys.exit()
 
 if len(sys.argv) == 2:
